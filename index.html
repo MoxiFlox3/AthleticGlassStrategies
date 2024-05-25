@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AthleticGlassStrategies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product {
+            background: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mr.RossFiveMScripts</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>CurrentlyAvalable</h2>
+            <div id="product-list">
+                <!-- Product with PayPal form -->
+                <div class="product">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="NWC924D5V6F56" />
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="on0" value="Type of Membership"/>
+                                    Type of Membership
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="os0">
+                                        <option value="Silver">Silver $5.00 AUD</option>
+                                        <option value="Gold">Gold $15.00 AUD</option>
+                                        <option value="VIP">VIP $20.00 AUD</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="on1" value="Custom Scripts"/>
+                                    Custom Scripts
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="os1">
+                                        <option value="EnhancedHudScript">EnhancedHudScript</option>
+                                        <option value="EnhancedDamageSystemScript">EnhancedDamageSystemScript</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="currency_code" value="AUD" />
+                        <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AthleticGlassStrategies</p>
+        </div>
+    </footer>
+</body>
+</html>
