@@ -104,7 +104,7 @@
                         <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
                     </form>
                     <!-- Upload form -->
-                    <form class="upload-form" action="https://api.github.com/repos/MoxiFlox3/AthleticGlassStrategies/actions/workflows/upload.yml/dispatches" method="post" enctype="multipart/form-data" onsubmit="uploadFile(event)">
+                    <form class="upload-form" action="https://api.github.com/repos/moxiflox3/AthleticGlassStrategies/actions/workflows/upload.yml/dispatches" method="post" enctype="multipart/form-data" onsubmit="uploadFile(event)">
                         <input type="file" name="file" id="file" required>
                         <button type="submit">Upload</button>
                     </form>
@@ -129,7 +129,7 @@
 
             reader.onload = async function (e) {
                 const fileContent = e.target.result.split(',')[1];
-                const response = await fetch('https://api.github.com/repos/MoxiFlox3/AthleticGlassStrategies/actions/workflows/upload.yml/dispatches', {
+                const response = await fetch('https://api.github.com/repos/moxiflox3/AthleticGlassStrategies/actions/workflows/upload.yml/dispatches', {
                     method: 'POST',
                     headers: {
                         'Authorization': `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`,
