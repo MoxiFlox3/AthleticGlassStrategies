@@ -1,1 +1,20 @@
-upload.yml
+name: Upload File
+
+on:
+  workflow_dispatch:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository content
+      uses: actions/checkout@v2
+
+    - name: Upload file
+      run: |
+        echo "${{ secrets.FILE_CONTENT }}" | base64 --decode > newfile.txt
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add newfile.txt
+        git commit -m "Add new file from workflow"
+        git push
